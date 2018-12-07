@@ -1,10 +1,6 @@
 package com.example.android.lifecycle;
 
-import android.annotation.SuppressLint;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -144,8 +140,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
         logAndAppend(ON_SAVE_INSTANCE_STATE);
         String currentLog = mLifecycleDisplay.getText().toString();
         outState.putString(LIFECYCLE_CALLBACKS_TEXT_KEY, currentLog);
