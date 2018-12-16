@@ -58,5 +58,6 @@
 
     <!-- Value in SharedPreferences for green color option -->
     <string name="pref_color_green_value" translatable="false">green</string>
+    <string name="size_validation_error">Enter size between 0 and 3</string>
 
 </resources>
